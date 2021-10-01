@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Imersão Dev Alura - Aula 02</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">
+          Calculadora AluraVersos
+        </h1>
+        <p class="page-subtitle">
+          Descubra os valores que deseja com um click!
+        </p>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt=""><br><br>
+    </div>
+    <section class="corpo">
+        <div class="infors">
+            <div class="page-infors">
+                <h1>Instruções</h1>
+                <p> Digite o valor, logo em seguida escolha o tipo do valor que você digitou. Por fim, clique no botão para converter. EX: <br/>
+                    <b>
+                        <code>
+                            VALOR DIGITADO: 5000    TIPO DE VALOR: Real
+                            BOTÃO: "DOLAR"  RESULTADO: &dollar; 954,14
+                        </code>
+                    </b>
+                </p>
+            </div>
+        </div>
+        <div class="calculadora">
+            <form method="POST" class="page-form" name="FormularioCalc" action="#" id="fcalculadora" oninput="">
+				<fieldset id="printResult">                    
+					<legend>CalcVersos</legend>
+                    <div class="printResultado">
+                        <div class="li-01">
+                            <p><input type="number" name="tValor" id="cvalor" size="2" placeholder="Digite um valor..."></p>
+                            <label for="svalor">Tipo de Valor:</label>
+
+                            <select name="svalor" id="svalor">
+                                <option value="real">REAL</option>
+                                <option value="dolar">DOLAR</option>
+                                <option value="euro">EURO</option>
+                                <option value="btn">BTN</option>
+                                <option value="eth">ETH</option>
+                                <option value="cro">CRO</option>
+                                <option value="celsius">CELSIUS</option>
+                                <option value="fahren">FAHRENHEIT</option>
+                                <option value="kelvin">KELVIN</option>
+                                <option value="km">KM</option>
+                                <option value="aLuz">ANOS LUZ</option>
+                            </select>
+                        </div>
+                        
+					    <p id="valorDigitado" ></p>
+                    </div>
+                    
+                </fieldset>
+                <div class="li-01">
+                    <fieldset class="fieldset-contet">
+                        <legend>Conversão de Moedas</legend>
+                        <button type="button" onclick="calcConvert('dolar')" >DOLAR</button>
+                        <button type="button" onclick="calcConvert('real')">REAL</button>
+                        <button type="button" onclick="calcConvert('euro')">EURO</button>
+                    </fieldset>
+                    <fieldset class="fieldset-contet">
+                        <legend>Conversão de Crypto Moedas</legend>
+                        <button type="button" onclick="calcConvert('btn')">BTN</button>
+                        <button type="button" onclick="calcConvert('eth')">ETH</button>
+                        <button type="button" onclick="calcConvert('cro')">CRO</button>
+                    </fieldset>
+                </div>
+                <div class="li-02">
+                    <fieldset class="fieldset-contet">
+                        <legend>Conversão de Temperatura</legend>
+                        <button type="button" onclick="calcConvert('celsius')">CELSIUS</button>
+                        <button type="button" onclick="calcConvert('fahren')"> FAHRENHEIT</button>
+                        <button type="button" onclick="calcConvert('kelvin')">KELVIN</button>
+                    </fieldset>
+                    <fieldset class="fieldset-contet">
+                        <legend>Conversão Anos Luz</legend>
+                        <button type="button" onclick="calcConvert('km')">KM</button>
+                        <button type="button" onclick="calcConvert('aLuz')">ANOS LUZ</button>
+                    </fieldset>
+                </div>  
+			</form>
+        </div>
+    </section>
+    <a href="https://denersonpinas.com/portfolio/" target="_blank">
+        <img src="https://denersonpinas.com/wp-content/uploads/2021/08/cropped-code-150x150.png" alt="" class="alura-logo"/>
+    </a>
+    <footer>
+        <p> Desenvolvido por <b>Dênerson Pinas</b></p>
+    </footer>
+</body>
+</html>

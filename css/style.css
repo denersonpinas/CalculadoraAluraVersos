@@ -1,0 +1,146 @@
+:root {
+    --bg-color: #fff; 
+    --text-primary-color: #f9b645;
+    --primary-gradient: #a47be3;
+    --second-gradient: #5b4cbf;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto Mono", monospace;
+    background-color: var(--bg-color);
+}
+
+.container {
+    margin-bottom: 30px;
+    background-image: linear-gradient(to right, var(--primary-gradient) , var(--second-gradient));    
+    text-align: center;
+    padding: 20px;
+}
+
+.page-title {
+    color: var(--text-primary-color);
+    margin: 0 0 5px;
+}
+
+.page-subtitle {
+    color: var(--text-primary-color);
+    margin-top: 5px;
+}
+
+.page-logo {
+    width: 200px;
+}
+
+.alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.corpo {
+    width: 100%;
+    display: flex;
+}
+
+.corpo .infors, .calculadora {
+    width: 50%;
+}
+
+.infors {
+    width: 100%;}
+
+.page-infors {
+    width: 75%;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f9b645;
+    border-radius: 20px;
+    box-shadow: 0 0 0.5em #000;
+    color: #fff;
+}
+
+.calculadora {
+    width: 100%;    
+}
+
+.page-form {
+    width: 75%;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, var(--primary-gradient) , var(--second-gradient));
+    box-shadow: 0 0 0.5em #000;
+}
+
+.calculadora .li-01, .li-02 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fieldset-contet {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-form legend {
+    color: var(--text-primary-color);
+    font-size: 13pt;
+    font-weight: 500;
+    text-align: center;
+}
+
+.page-form .printResultado {
+    padding-left: 10px;    
+    background-color: #fff;
+    align-items: center;
+}
+
+.page-form input{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.page-form p {
+    padding: 0px;
+    margin: 0px;
+    color: rgb(150, 150, 150);
+}
+
+.page-form button {
+    width: 100%;
+    margin: 10px;
+    padding: 11px 10px 11px 10px;
+    border: none;
+    border-bottom: solid 4px #f5a111;
+    border-radius: 12px;
+    background-color: #f9b645;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+.page-form button:hover {
+    border-bottom: solid 4px #f9b645;
+    background-color: #f5a111;
+}
+
+footer {
+    height: 50px;
+    padding-top: 10px;
+    margin-top: 40px;
+    flex-shrink: 0;
+    background-image: linear-gradient(to right, var(--primary-gradient) , var(--second-gradient));
+    text-align: center;
+    color: #fff;    
+}
